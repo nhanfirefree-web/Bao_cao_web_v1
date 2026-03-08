@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập & Đăng kí</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h1>Tạo Tài Khoản</h1>
+          <span>Sử dụng email của bạn để đăng kí</span>
+          <input type="text" placeholder="Tên của bạn" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Mật khẩu" required />
+          <button type="submit">Đăng Kí</button>
+        </form>
+      </div>
+
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1>Đăng Nhập</h1>
+          <span>Sử dụng tài khoản của bạn</span>
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Mật khẩu" required />
+          <a href="#" class="forgot-password">Quên mật khẩu?</a>
+          <button type="submit">Đăng Nhập</button>
+        </form>
+      </div>
+
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Mừng bạn trở lại!</h1>
+            <p>
+              Để giữ kết nối với chúng tôi, vui lòng đăng nhập bằng thông tin cá
+              nhân của bạn
+            </p>
+            <button class="ghost" id="signIn">Đăng Nhập</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Xin chào!</h1>
+            <p>
+              Nhập thông tin của bạn và bắt đầu hành trình tuyệt vời cùng chúng
+              tôi
+            </p>
+            <button class="ghost" id="signUp">Đăng Kí</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
